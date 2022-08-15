@@ -19,7 +19,7 @@ public:
             mask = (mask << 1) | 1;
             m = m >> 1;
         }
-        int ans =(-n) & mask;
+        int ans =(~n) & mask;
         return ans;
     }
 };
